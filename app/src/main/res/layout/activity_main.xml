@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Relative"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/satu"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/satu"
+        android:hint="Put your Text Here"
+        android:id="@+id/edittext1"></EditText>
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:layout_below="@+id/edittext1"
+        android:layout_toLeftOf="@+id/spinner2"
+        android:layout_alignParentLeft="true"></Spinner>
+
+    <Spinner
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext1"
+        android:layout_alignParentRight="true"
+        android:id="@+id/spinner2"></Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2"
+        android:text="Simpan"
+        android:layout_alignParentRight="true"></Button>
+
+</RelativeLayout>
